@@ -1,5 +1,6 @@
 *{
     border: 0%;
+
     padding: 0%;
     margin: 0%;
     align-items: center;
@@ -10,7 +11,7 @@ body{
     background-image: url("https://wallpapercave.com/wp/HByeKGm.jpg");
     background-size: cover;
 }
-.container{
+.enter{
     width: 40%;
     top: 10%;
     left: 5%;
@@ -58,7 +59,7 @@ body{
     border-radius: 5px;
     font-family: 'Poppins',sans-serif;
 }
-#tasks{
+#list{
     border-radius: 10px;
     width: 92%;
     position: relative;
