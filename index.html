@@ -9,12 +9,12 @@
 </head>
 <body>
     <h1>-TO DO List-</h1>
-    <div class="container">
+    <div class="enter">
         <div id="newtask">
             <input type="text" placeholder="Task to be done.." id="main">
             <button id="push">Add</button>
         </div>
-        <div id="tasks"></div>  
+        <div id="list"></div>  
     </div>
 </body>
 </html>
@@ -25,7 +25,7 @@
     }
 
     else{
-        document.querySelector('#tasks').innerHTML += `
+        document.querySelector('#list').innerHTML += `
             <div class="task">
                 <span id="taskname">
                     ${document.querySelector('#newtask input').value}
@@ -36,9 +36,9 @@
             </div>
         `;
 
-        var current_tasks = document.querySelectorAll(".delete");
-        for(var i=0; i<current_tasks.length; i++){
-            current_tasks[i].onclick = function(){
+        var current_list = document.querySelectorAll(".delete");
+        for(var i=0; i<current_list.length; i++){
+            current_list[i].onclick = function(){
                 this.parentNode.remove();
             }
         }
